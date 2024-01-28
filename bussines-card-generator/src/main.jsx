@@ -1,10 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import { InputCompeonente } from "./components/input-componente";
-
+import { BussinesCard } from "./components/bussines-card-componente";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <InputCompeonente />
+    <BussinesCard />
   </React.StrictMode>
 );
