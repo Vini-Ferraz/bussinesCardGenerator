@@ -1,4 +1,4 @@
-export function Website() {
+export function Website({ website }) {
   return (
     <div>
       <i>
@@ -7,7 +7,7 @@ export function Website() {
           alt="icone de um globo terrestre da cor amarela"
         />
       </i>
-      <p>www.google.com</p>
+      <p>{website}</p>
     </div>
   );
 }

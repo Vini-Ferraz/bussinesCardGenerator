@@ -1,3 +1,3 @@
-export function Cargo() {
-  return <h2>Enfermeira Chefe</h2>;
+export function Cargo({ cargo }) {
+  return <h2>{cargo}</h2>;
 }

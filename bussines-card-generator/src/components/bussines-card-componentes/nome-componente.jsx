@@ -1,3 +1,3 @@
-export function Nome() {
-  return <h1>Ana B. Santos</h1>;
+export function Nome({ nome }) {
+  return <h1>{nome}</h1>;
 }

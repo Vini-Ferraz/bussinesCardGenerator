@@ -4,14 +4,25 @@ import { InputTelefone } from "../components/inputs-componentes/telefone-input-c
 import { InputWebsite } from "../components/inputs-componentes/website-input-componente";
 import { InputEndereco } from "../components/inputs-componentes/endereco-input-componente";
 import { InputImagem } from "../components/inputs-componentes/imagem-input-componente";
-export function InputCompeonente() {
+export function InputComponente({
+  nome,
+  setNome,
+  cargo,
+  setCargo,
+  telefone,
+  setTelefone,
+  website,
+  setWebsite,
+  endereco,
+  setEndereco,
+}) {
   return (
     <div>
-      <InputNome />
-      <InputCargo />
-      <InputTelefone />
-      <InputWebsite />
-      <InputEndereco />
+      <InputNome nome={nome} setNome={setNome} />
+      <InputCargo cargo={cargo} setCargo={setCargo} />
+      <InputTelefone telefone={telefone} setTelefone={setTelefone} />
+      <InputWebsite website={website} setWebsite={setWebsite} />
+      <InputEndereco endereco={endereco} setEndereco={setEndereco} />
       <InputImagem />
     </div>
   );

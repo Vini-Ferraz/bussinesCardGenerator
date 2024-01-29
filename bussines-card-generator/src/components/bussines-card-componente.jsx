@@ -1,19 +1,19 @@
 import { Cargo } from "./bussines-card-componentes/cargo-componente";
 import { FotoDePerfil } from "./bussines-card-componentes/foto-de-perfil-componente";
-import { Localizacao } from "./bussines-card-componentes/localizacao-componente";
+import { Endereco } from "./bussines-card-componentes/endereco-componente";
 import { Nome } from "./bussines-card-componentes/nome-componente";
 import { Telefone } from "./bussines-card-componentes/telefone-componente";
 import { Website } from "./bussines-card-componentes/website-componente";
 
-export function BussinesCard() {
+export function BussinesCard({ nome, cargo, telefone, website, endereco }) {
   return (
     <div>
       <FotoDePerfil />
-      <Nome />
-      <Cargo />
-      <Telefone />
-      <Website />
-      <Localizacao />
+      <Nome nome={nome} />
+      <Cargo cargo={cargo} />
+      <Telefone telefone={telefone} />
+      <Website website={website} />
+      <Endereco endereco={endereco} />
     </div>
   );
 }

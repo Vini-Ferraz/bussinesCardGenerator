@@ -1,4 +1,4 @@
-export function Localizacao() {
+export function Endereco({ endereco }) {
   return (
     <div>
       <i>
@@ -7,7 +7,7 @@ export function Localizacao() {
           alt="Pin de localização na cor amarela"
         />
       </i>
-      <p>Sarandi - PR</p>
+      <p>{endereco}</p>
     </div>
   );
 }
