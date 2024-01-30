@@ -5,10 +5,17 @@ import { Nome } from "./bussines-card-componentes/nome-componente";
 import { Telefone } from "./bussines-card-componentes/telefone-componente";
 import { Website } from "./bussines-card-componentes/website-componente";
 
-export function BussinesCard({ nome, cargo, telefone, website, endereco }) {
+export function BussinesCard({
+  nome,
+  cargo,
+  telefone,
+  website,
+  endereco,
+  imagem,
+}) {
   return (
     <div>
-      <FotoDePerfil />
+      <FotoDePerfil imagem={imagem} />
       <Nome nome={nome} />
       <Cargo cargo={cargo} />
       <Telefone telefone={telefone} />

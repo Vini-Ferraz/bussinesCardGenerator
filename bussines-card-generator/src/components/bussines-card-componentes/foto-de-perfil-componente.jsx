@@ -1,7 +1,7 @@
-export function FotoDePerfil() {
+export function FotoDePerfil({ imagem }) {
   return (
     <img
-      src="foto-bussines-card-placeholder.png"
+      src={imagem}
       alt="foto de uma mulher asiática iluminada por uma luz roxa"
     />
   );

@@ -7,6 +7,7 @@ export function App() {
   const [telefone, setTelefone] = useState("");
   const [website, setWebsite] = useState("");
   const [endereco, setEndereco] = useState("");
+  const [imagem, setImagem] = useState(null);
   return (
     <div>
       <InputComponente
@@ -20,6 +21,7 @@ export function App() {
         setWebsite={setWebsite}
         endereco={endereco}
         setEndereco={setEndereco}
+        setImagem={setImagem}
       />
       <BussinesCard
         nome={nome}
@@ -27,6 +29,7 @@ export function App() {
         telefone={telefone}
         website={website}
         endereco={endereco}
+        imagem={imagem}
       />
     </div>
   );

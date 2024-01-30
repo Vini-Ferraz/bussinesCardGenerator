@@ -15,6 +15,7 @@ export function InputComponente({
   setWebsite,
   endereco,
   setEndereco,
+  setImagem,
 }) {
   return (
     <div>
@@ -23,7 +24,7 @@ export function InputComponente({
       <InputTelefone telefone={telefone} setTelefone={setTelefone} />
       <InputWebsite website={website} setWebsite={setWebsite} />
       <InputEndereco endereco={endereco} setEndereco={setEndereco} />
-      <InputImagem />
+      <InputImagem setImagem={setImagem} />
     </div>
   );
 }
