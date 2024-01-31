@@ -1,7 +1,12 @@
 export function InputCargo({ cargo, setCargo }) {
   return (
     <div>
-      <label htmlFor="inputCargo" name="cargoLabel" id="cargoLabel">
+      <label
+        htmlFor="inputCargo"
+        name="cargoLabel"
+        id="cargoLabel"
+        className="inputLabel"
+      >
         Cargo:{" "}
       </label>
       <input

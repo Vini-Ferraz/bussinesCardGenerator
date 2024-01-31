@@ -1,7 +1,12 @@
 export function InputWebsite({ website, setWebsite }) {
   return (
     <div>
-      <label htmlFor="inputWebsite" name="websiteLabel" id="websiteLabel">
+      <label
+        htmlFor="inputWebsite"
+        name="websiteLabel"
+        id="websiteLabel"
+        className="inputLabel"
+      >
         Website:{" "}
       </label>
       <input

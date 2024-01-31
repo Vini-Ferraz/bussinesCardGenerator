@@ -1,7 +1,12 @@
 export function InputNome({ nome, setNome }) {
   return (
     <div>
-      <label htmlFor="inputNome" name="nomeLabel" id="nomeLabel">
+      <label
+        htmlFor="inputNome"
+        name="nomeLabel"
+        id="nomeLabel"
+        className="inputLabel"
+      >
         Nome:{" "}
       </label>
       <input

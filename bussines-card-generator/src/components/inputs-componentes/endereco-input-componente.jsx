@@ -1,7 +1,12 @@
 export function InputEndereco({ endereco, setEndereco }) {
   return (
     <div>
-      <label htmlFor="inputEndereco" name="enderecoLabel" id="enderecoLabel">
+      <label
+        htmlFor="inputEndereco"
+        name="enderecoLabel"
+        id="enderecoLabel"
+        className="inputLabel"
+      >
         Endereço:{" "}
       </label>
       <input

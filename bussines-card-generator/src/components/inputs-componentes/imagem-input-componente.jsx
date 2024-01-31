@@ -6,8 +6,13 @@ export function InputImagem({ setImagem }) {
   };
   return (
     <div>
-      <label htmlFor="inputImagem" name="imagemLabel" id="imagemLabel">
-        Foto de perfil:{" "}
+      <label
+        htmlFor="inputImagem"
+        name="imagemLabel"
+        id="imagemLabel"
+        className="inputLabel"
+      >
+        Adicionar Foto
       </label>
       <input
         type="file"

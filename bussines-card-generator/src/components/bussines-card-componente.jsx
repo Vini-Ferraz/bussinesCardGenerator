@@ -14,7 +14,7 @@ export function BussinesCard({
   imagem,
 }) {
   return (
-    <div>
+    <div id="bussinesCard">
       <FotoDePerfil imagem={imagem} />
       <Nome nome={nome} />
       <Cargo cargo={cargo} />

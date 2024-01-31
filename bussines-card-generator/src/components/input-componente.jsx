@@ -18,7 +18,8 @@ export function InputComponente({
   setImagem,
 }) {
   return (
-    <div>
+    <div id="inputComponente">
+      <h1 className="tituloInputComponente">Informações</h1>
       <InputNome nome={nome} setNome={setNome} />
       <InputCargo cargo={cargo} setCargo={setCargo} />
       <InputTelefone telefone={telefone} setTelefone={setTelefone} />
