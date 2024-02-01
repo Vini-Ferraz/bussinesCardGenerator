@@ -1,8 +1,7 @@
 export function FotoDePerfil({ imagem }) {
   return (
-    <img
-      src={imagem}
-      alt="foto de uma mulher asiática iluminada por uma luz roxa"
-    />
+    <div id="foto-perfil-caixa-flex">
+      <img src={imagem} alt="foto de perfil" id="foto-perfil" />
+    </div>
   );
 }

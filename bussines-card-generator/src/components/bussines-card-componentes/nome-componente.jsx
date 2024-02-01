@@ -1,3 +1,3 @@
 export function Nome({ nome }) {
-  return <h1>{nome}</h1>;
+  return <h1 id="nome">{nome}</h1>;
 }

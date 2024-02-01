@@ -18,14 +18,21 @@ export function InputComponente({
   setImagem,
 }) {
   return (
-    <div id="inputComponente">
-      <h1 className="tituloInputComponente">Informações</h1>
-      <InputNome nome={nome} setNome={setNome} />
-      <InputCargo cargo={cargo} setCargo={setCargo} />
-      <InputTelefone telefone={telefone} setTelefone={setTelefone} />
-      <InputWebsite website={website} setWebsite={setWebsite} />
-      <InputEndereco endereco={endereco} setEndereco={setEndereco} />
-      <InputImagem setImagem={setImagem} />
+    <div id="inputComponenteCaixaFlex">
+      <div id="inputComponente" className="inputComponenteEstilo">
+        <h1 className="tituloInputComponente">Informações</h1>
+        <InputNome nome={nome} setNome={setNome} />
+        <InputCargo cargo={cargo} setCargo={setCargo} />
+        <InputTelefone telefone={telefone} setTelefone={setTelefone} />
+        <InputWebsite website={website} setWebsite={setWebsite} />
+        <InputEndereco endereco={endereco} setEndereco={setEndereco} />
+        <InputImagem setImagem={setImagem} />
+      </div>
+      <div>
+        <i>
+          <img src="flecha-icone.svg" alt="icone de flecha" />
+        </i>
+      </div>
     </div>
   );
 }

@@ -1,3 +1,3 @@
 export function Cargo({ cargo }) {
-  return <h2>{cargo}</h2>;
+  return <h2 id="cargo">{cargo}</h2>;
 }

@@ -1,7 +1,7 @@
 export function Website({ website }) {
   return (
-    <div>
-      <i>
+    <div className="info-flex-box info" id="website-info">
+      <i className="icone-bussines-card">
         <img
           src="globo-terrestre-icone.svg"
           alt="icone de um globo terrestre da cor amarela"

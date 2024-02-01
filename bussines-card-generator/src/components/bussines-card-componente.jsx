@@ -14,13 +14,19 @@ export function BussinesCard({
   imagem,
 }) {
   return (
-    <div id="bussinesCard">
-      <FotoDePerfil imagem={imagem} />
-      <Nome nome={nome} />
-      <Cargo cargo={cargo} />
-      <Telefone telefone={telefone} />
-      <Website website={website} />
-      <Endereco endereco={endereco} />
+    <div id="bussinesCardFlexBox">
+      <div id="bussinesCard">
+        <FotoDePerfil imagem={imagem} />
+        <div>
+          <Nome nome={nome} />
+          <Cargo cargo={cargo} />
+        </div>
+        <div>
+          <Telefone telefone={telefone} />
+          <Website website={website} />
+          <Endereco endereco={endereco} />
+        </div>
+      </div>
     </div>
   );
 }

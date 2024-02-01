@@ -6,7 +6,7 @@
   --bg-color-components: #414066;
   --font-white-color: #ffffff;
   --font-black-color: #1e1e1e;
-  --shadow: rgba(30, 30, 30, 0.3);
+  --shadow: rgba(30, 30, 30, 0.25);
   --border: 0.5vw;
   --font-style: "Poppins", sans-serif;
 }
@@ -17,17 +17,36 @@
   box-sizing: border-box;
   font-family: var(--font-style);
 }
+body {
+  background-color: var(--bg-color);
+}
+.inputComponenteEstilo,
+#inputComponenteCaixaFlex,
+#bussinesCard,
+.info-flex-box,
+#foto-perfil-caixa-flex {
+  display: flex;
+}
+#inputComponenteCaixaFlex {
+  align-items: center;
+}
 
-#inputComponente {
+.inputComponenteEstilo {
   background-color: var(--bg-color-components);
   width: 31vw;
   height: 100vh;
   padding: 2vw 3vw;
   color: var(--font-white-color);
-  display: flex;
   flex-direction: column;
   align-items: left;
   justify-content: space-around;
+  box-shadow: 0.3vw 0.3vw var(--shadow);
+}
+.inputComponenteEstiloFechado {
+  background-color: var(--bg-color-components);
+  width: 5vw;
+  height: 100vh;
+  box-shadow: 0.3vw 0.3vw var(--shadow);
 }
 label {
   display: block;
@@ -64,6 +83,52 @@ input {
   font-weight: 600;
 }
 
+#bussinesCardFlexBox {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 #bussinesCard {
+  background-color: var(--bg-color-components);
+  flex-direction: column;
+  justify-content: space-around;
+  height: 72vh;
+  width: 23.5vw;
+  color: var(--font-white-color);
+  padding: 2vw 2vw;
+  border-radius: var(--border);
+  box-shadow: 0.3vw 0.3vw var(--shadow);
+}
+#foto-perfil-caixa-flex {
+  justify-content: center;
+}
+#website-info {
+  padding: 0.25vw 0;
+}
+#foto-perfil {
+  height: 12vw;
+  width: 12vw;
+  border-radius: 50%;
+  box-sizing: content-box;
+}
+#nome {
+  font-size: 2.2vw;
+  font-weight: 400;
+}
+#cargo {
+  font-size: 1.45vw;
+  font-weight: 300;
+}
+.info {
+  font-size: 1.45vw;
+  font-weight: 200;
+}
+.icone-bussines-card {
+  padding-right: 5%;
+}
+
+#inputComponenteCaixaFlex {
   display: none;
 }
