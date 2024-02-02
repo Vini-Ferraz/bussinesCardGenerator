@@ -3,13 +3,13 @@ import { FotoDePerfil } from "./bussines-card-componentes/foto-de-perfil-compone
 import { Endereco } from "./bussines-card-componentes/endereco-componente";
 import { Nome } from "./bussines-card-componentes/nome-componente";
 import { Telefone } from "./bussines-card-componentes/telefone-componente";
-import { Website } from "./bussines-card-componentes/website-componente";
+import { Email } from "./bussines-card-componentes/email-componente";
 
 export function BussinesCard({
   nome,
   cargo,
   telefone,
-  website,
+  email,
   endereco,
   imagem,
 }) {
@@ -23,7 +23,7 @@ export function BussinesCard({
         </div>
         <div>
           <Telefone telefone={telefone} />
-          <Website website={website} />
+          <Email email={email} />
           <Endereco endereco={endereco} />
         </div>
       </div>

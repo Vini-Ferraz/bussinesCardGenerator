@@ -24,7 +24,8 @@ body {
 #inputComponenteCaixaFlex,
 #bussinesCard,
 .info-flex-box,
-#foto-perfil-caixa-flex {
+#foto-perfil-caixa-flex,
+#pai-flex-box {
   display: flex;
 }
 #inputComponenteCaixaFlex {
@@ -84,8 +85,8 @@ input {
 }
 
 #bussinesCardFlexBox {
-  height: 100vh;
   width: 100%;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -94,8 +95,8 @@ input {
   background-color: var(--bg-color-components);
   flex-direction: column;
   justify-content: space-around;
-  height: 72vh;
-  width: 23.5vw;
+  height: 76.5vh;
+  width: 25vw;
   color: var(--font-white-color);
   padding: 2vw 2vw;
   border-radius: var(--border);
@@ -104,7 +105,7 @@ input {
 #foto-perfil-caixa-flex {
   justify-content: center;
 }
-#website-info {
+#email-info {
   padding: 0.25vw 0;
 }
 #foto-perfil {
@@ -112,6 +113,7 @@ input {
   width: 12vw;
   border-radius: 50%;
   box-sizing: content-box;
+  object-fit: cover;
 }
 #nome {
   font-size: 2.2vw;
@@ -128,7 +130,15 @@ input {
 .icone-bussines-card {
   padding-right: 5%;
 }
-
-#inputComponenteCaixaFlex {
-  display: none;
+.btn-abrir,
+.btn-fechar {
+  border: none;
+  background-color: transparent;
+}
+.btn-fechar {
+  transform: rotate(180deg);
+}
+.btn-abrir:hover,
+.btn-fechar:hover {
+  cursor: pointer;
 }

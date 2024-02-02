@@ -5,11 +5,11 @@ export function App() {
   const [nome, setNome] = useState("");
   const [cargo, setCargo] = useState("");
   const [telefone, setTelefone] = useState("");
-  const [website, setWebsite] = useState("");
+  const [email, setEmail] = useState("");
   const [endereco, setEndereco] = useState("");
   const [imagem, setImagem] = useState(null);
   return (
-    <div>
+    <div id="pai-flex-box">
       <InputComponente
         nome={nome}
         setNome={setNome}
@@ -17,8 +17,8 @@ export function App() {
         setCargo={setCargo}
         telefone={telefone}
         setTelefone={setTelefone}
-        website={website}
-        setWebsite={setWebsite}
+        email={email}
+        setEmail={setEmail}
         endereco={endereco}
         setEndereco={setEndereco}
         setImagem={setImagem}
@@ -27,7 +27,7 @@ export function App() {
         nome={nome}
         cargo={cargo}
         telefone={telefone}
-        website={website}
+        email={email}
         endereco={endereco}
         imagem={imagem}
       />

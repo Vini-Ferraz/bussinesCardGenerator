@@ -1,9 +1,11 @@
+import { useState } from "react";
 import { InputNome } from "../components/inputs-componentes/nome-input-componente";
 import { InputCargo } from "../components/inputs-componentes/cargo-input-componente";
 import { InputTelefone } from "../components/inputs-componentes/telefone-input-componente";
-import { InputWebsite } from "../components/inputs-componentes/website-input-componente";
+import { InputEmail } from "../components/inputs-componentes/email-input-componente";
 import { InputEndereco } from "../components/inputs-componentes/endereco-input-componente";
 import { InputImagem } from "../components/inputs-componentes/imagem-input-componente";
+import { BtnAbrirFechar } from "./inputs-componentes/botao-abrir-fechar-formulario";
 export function InputComponente({
   nome,
   setNome,
@@ -11,28 +13,30 @@ export function InputComponente({
   setCargo,
   telefone,
   setTelefone,
-  website,
-  setWebsite,
+  email,
+  setEmail,
   endereco,
   setEndereco,
   setImagem,
 }) {
+  const [estadoBtn, setEstadoBtn] = useState(false);
   return (
     <div id="inputComponenteCaixaFlex">
-      <div id="inputComponente" className="inputComponenteEstilo">
-        <h1 className="tituloInputComponente">Informações</h1>
-        <InputNome nome={nome} setNome={setNome} />
-        <InputCargo cargo={cargo} setCargo={setCargo} />
-        <InputTelefone telefone={telefone} setTelefone={setTelefone} />
-        <InputWebsite website={website} setWebsite={setWebsite} />
-        <InputEndereco endereco={endereco} setEndereco={setEndereco} />
-        <InputImagem setImagem={setImagem} />
-      </div>
-      <div>
-        <i>
-          <img src="flecha-icone.svg" alt="icone de flecha" />
-        </i>
-      </div>
+      {estadoBtn == false ? (
+        <div id="inputComponente" className="inputComponenteEstilo">
+          <h1 className="tituloInputComponente">Informações</h1>
+          <InputNome nome={nome} setNome={setNome} />
+          <InputCargo cargo={cargo} setCargo={setCargo} />
+          <InputTelefone telefone={telefone} setTelefone={setTelefone} />
+          <InputEmail email={email} setEmail={setEmail} />
+          <InputEndereco endereco={endereco} setEndereco={setEndereco} />
+          <InputImagem setImagem={setImagem} />
+        </div>
+      ) : (
+        <div className="inputComponenteEstiloFechado"></div>
+      )}
+
+      <BtnAbrirFechar estadoBtn={estadoBtn} setEstadoBtn={setEstadoBtn} />
     </div>
   );
 }
