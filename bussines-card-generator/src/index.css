@@ -1,16 +1,15 @@
+/*Configurações Gerais do APP*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap");
-
 :root {
   --bg-color: #c9c5cb;
   --bg-color-hover: #a4a1a5;
   --bg-color-components: #414066;
   --font-white-color: #ffffff;
   --font-black-color: #1e1e1e;
-  --shadow: rgba(30, 30, 30, 0.25);
+  --shadow: 0.3vw 0.3vw rgba(30, 30, 30, 0.25);
   --border: 0.5vw;
   --font-style: "Poppins", sans-serif;
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -20,6 +19,7 @@
 body {
   background-color: var(--bg-color);
 }
+/*Estilização da área do Input*/
 .inputComponenteEstilo,
 #inputComponenteCaixaFlex,
 #bussinesCardInfo,
@@ -28,26 +28,31 @@ body {
 #pai-flex-box {
   display: flex;
 }
-#inputComponenteCaixaFlex {
+.inputComponenteEstilo,
+#bussinesCardInfo {
+  flex-direction: column;
+}
+.inputComponenteEstilo,
+#bussinesCardInfo {
+  justify-content: space-around;
+}
+#inputComponenteCaixaFlex,
+#bussinesCardFlexBox {
   align-items: center;
 }
-
 .inputComponenteEstilo {
   background-color: var(--bg-color-components);
   width: 31vw;
   height: 100vh;
   padding: 2vw 3vw;
   color: var(--font-white-color);
-  flex-direction: column;
-  align-items: left;
-  justify-content: space-around;
-  box-shadow: 0.3vw 0.3vw var(--shadow);
+  box-shadow: var(--shadow);
 }
 .inputComponenteEstiloFechado {
   background-color: var(--bg-color-components);
   width: 5vw;
   height: 100vh;
-  box-shadow: 0.3vw 0.3vw var(--shadow);
+  box-shadow: var(--shadow);
 }
 label {
   display: block;
@@ -57,7 +62,7 @@ input,
   background-color: var(--bg-color);
   padding: 0.5vw;
   border-radius: var(--border);
-  box-shadow: 0.3vw 0.3vw var(--shadow);
+  box-shadow: var(--shadow);
 }
 input {
   width: 100%;
@@ -83,12 +88,24 @@ input {
   font-size: 1.7vw;
   font-weight: 600;
 }
+/*Estilização do botão abrir e fechar*/
+.btn-abrir,
+.btn-fechar {
+  border: none;
+  background-color: transparent;
+}
+.btn-fechar {
+  transform: rotate(180deg);
+}
+.btn-abrir:hover,
+.btn-fechar:hover {
+  cursor: pointer;
+}
 
 #bussinesCardFlexBox {
   width: 100%;
   height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 #bussinesCard {
@@ -99,14 +116,12 @@ input {
   aspect-ratio: 3/4;
   color: var(--font-white-color);
   border-radius: var(--border);
-  box-shadow: 0.3vw 0.3vw var(--shadow);
+  box-shadow: var(--shadow);
 }
 #bussinesCardInfo {
   height: 100%;
   padding: 1.5vw;
   overflow-wrap: break-word;
-  flex-direction: column;
-  justify-content: space-around;
 }
 #foto-perfil-caixa-flex {
   justify-content: center;
@@ -137,16 +152,4 @@ input {
 }
 .icone-bussines-card {
   padding-right: 5%;
-}
-.btn-abrir,
-.btn-fechar {
-  border: none;
-  background-color: transparent;
-}
-.btn-fechar {
-  transform: rotate(180deg);
-}
-.btn-abrir:hover,
-.btn-fechar:hover {
-  cursor: pointer;
 }
