@@ -1,11 +1,11 @@
 import { useState } from "react";
-import { InputNome } from "./inputs-componentes/nome-input-componente";
-import { InputCargo } from "./inputs-componentes/cargo-input-componente";
+import { InputNome } from "./inputs-componentes/NomeInputComponente";
+import { InputCargo } from "./inputs-componentes/CargoInputComponente";
 import { InputTelefone } from "./inputs-componentes/TelefoneInputComponente";
-import { InputEmail } from "./inputs-componentes/email-input-componente";
-import { InputEndereco } from "./inputs-componentes/endereco-input-componente";
-import { InputImagem } from "./inputs-componentes/imagem-input-componente";
-import { BtnAbrirFechar } from "./inputs-componentes/botao-abrir-fechar-formulario";
+import { InputEmail } from "./inputs-componentes/EmailInputComponente";
+import { InputEndereco } from "./inputs-componentes/EnderecoInputComponente";
+import { InputImagem } from "./inputs-componentes/ImagemInputComponente";
+import { BtnAbrirFechar } from "./inputs-componentes/BotaoAbrirFecharFormulario";
 export function InputComponente({
   nome,
   setNome,

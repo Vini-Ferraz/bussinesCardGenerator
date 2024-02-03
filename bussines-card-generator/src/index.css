@@ -22,7 +22,7 @@ body {
 }
 .inputComponenteEstilo,
 #inputComponenteCaixaFlex,
-#bussinesCard,
+#bussinesCardInfo,
 .info-flex-box,
 #foto-perfil-caixa-flex,
 #pai-flex-box {
@@ -93,20 +93,26 @@ input {
 }
 #bussinesCard {
   background-color: var(--bg-color-components);
-  flex-direction: column;
-  justify-content: space-around;
-  height: 76.5vh;
-  width: 25vw;
+  padding-right: 1.5vw;
+  min-width: 25vw;
+  width: fit-content;
+  aspect-ratio: 3/4;
   color: var(--font-white-color);
-  padding: 2vw 2vw;
   border-radius: var(--border);
   box-shadow: 0.3vw 0.3vw var(--shadow);
+}
+#bussinesCardInfo {
+  height: 100%;
+  padding: 1.5vw;
+  overflow-wrap: break-word;
+  flex-direction: column;
+  justify-content: space-around;
 }
 #foto-perfil-caixa-flex {
   justify-content: center;
 }
 #email-info {
-  padding: 0.25vw 0;
+  padding: 0.25vw;
 }
 #foto-perfil {
   height: 12vw;
@@ -126,6 +132,8 @@ input {
 .info {
   font-size: 1.45vw;
   font-weight: 200;
+  width: 100%;
+  word-wrap: break-word;
 }
 .icone-bussines-card {
   padding-right: 5%;
