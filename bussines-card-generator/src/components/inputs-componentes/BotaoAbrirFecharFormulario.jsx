@@ -5,7 +5,6 @@ export function BtnAbrirFechar({ estadoBtn, setEstadoBtn }) {
     } else {
       setEstadoBtn(false);
     }
-    console.log(estadoBtn);
   }
   return (
     <div>

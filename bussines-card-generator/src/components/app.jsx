@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { InputComponente } from "./input-componente";
-import { BussinesCard } from "./bussines-card-componente";
+import { InputComponente } from "./InputComponente";
+import { BussinesCard } from "./BussinesCardComponente";
 export function App() {
   const [nome, setNome] = useState("");
   const [cargo, setCargo] = useState("");

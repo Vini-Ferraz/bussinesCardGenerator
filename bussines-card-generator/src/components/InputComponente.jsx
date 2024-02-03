@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { InputNome } from "../components/inputs-componentes/nome-input-componente";
-import { InputCargo } from "../components/inputs-componentes/cargo-input-componente";
-import { InputTelefone } from "../components/inputs-componentes/telefone-input-componente";
-import { InputEmail } from "../components/inputs-componentes/email-input-componente";
-import { InputEndereco } from "../components/inputs-componentes/endereco-input-componente";
-import { InputImagem } from "../components/inputs-componentes/imagem-input-componente";
+import { InputNome } from "./inputs-componentes/nome-input-componente";
+import { InputCargo } from "./inputs-componentes/cargo-input-componente";
+import { InputTelefone } from "./inputs-componentes/TelefoneInputComponente";
+import { InputEmail } from "./inputs-componentes/email-input-componente";
+import { InputEndereco } from "./inputs-componentes/endereco-input-componente";
+import { InputImagem } from "./inputs-componentes/imagem-input-componente";
 import { BtnAbrirFechar } from "./inputs-componentes/botao-abrir-fechar-formulario";
 export function InputComponente({
   nome,
