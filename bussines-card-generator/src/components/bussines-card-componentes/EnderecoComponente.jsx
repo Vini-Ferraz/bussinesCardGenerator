@@ -5,6 +5,7 @@ export function Endereco({ endereco }) {
         <img
           src="pin-localização-icone.svg"
           alt="Pin de localização na cor amarela"
+          className="icone"
         />
       </i>
       <p>{endereco}</p>

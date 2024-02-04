@@ -5,6 +5,7 @@ export function Telefone({ telefone }) {
         <img
           src="telefone-icone.svg"
           alt="icone de um telefone antigo na cor amarela."
+          className="icone"
         />
       </i>
       <p> {telefone} </p>

@@ -13,6 +13,7 @@ export function InputTelefone({ telefone, setTelefone }) {
         type="text"
         id="inputTelefone"
         value={telefone}
+        maxLength={35}
         onChange={(e) => setTelefone(e.target.value)}
       />
     </div>

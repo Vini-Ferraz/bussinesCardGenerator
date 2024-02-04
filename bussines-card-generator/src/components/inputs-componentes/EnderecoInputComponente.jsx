@@ -13,6 +13,7 @@ export function InputEndereco({ endereco, setEndereco }) {
         type="text"
         id="inputEndereco"
         value={endereco}
+        maxLength={35}
         onChange={(e) => setEndereco(e.target.value)}
       />
     </div>

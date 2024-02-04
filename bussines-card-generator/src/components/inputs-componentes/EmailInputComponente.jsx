@@ -13,6 +13,7 @@ export function InputEmail({ email, setEmail }) {
         type="text"
         id="inputEmail"
         value={email}
+        maxLength={35}
         onChange={(e) => setEmail(e.target.value)}
       />
     </div>

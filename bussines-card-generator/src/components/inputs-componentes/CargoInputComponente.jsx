@@ -13,6 +13,7 @@ export function InputCargo({ cargo, setCargo }) {
         type="text"
         id="inputCargo"
         value={cargo}
+        maxLength={35}
         onChange={(e) => setCargo(e.target.value)}
       />
     </div>

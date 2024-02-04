@@ -19,7 +19,7 @@
 body {
   background-color: var(--bg-color);
 }
-/*Estilização da área do Input*/
+/*Configurações das flex boxes*/
 .inputComponenteEstilo,
 #inputComponenteCaixaFlex,
 #bussinesCardInfo,
@@ -40,6 +40,7 @@ body {
 #bussinesCardFlexBox {
   align-items: center;
 }
+/*Estilização da área do Input*/
 .inputComponenteEstilo {
   background-color: var(--bg-color-components);
   width: 31vw;
@@ -101,7 +102,7 @@ input {
 .btn-fechar:hover {
   cursor: pointer;
 }
-
+/*Estilização do Bussines Card*/
 #bussinesCardFlexBox {
   width: 100%;
   height: 100vh;
@@ -152,4 +153,191 @@ input {
 }
 .icone-bussines-card {
   padding-right: 5%;
+}
+/*Media Queries para a responsividade*/
+@media (max-width: 1000px) {
+  /*Estilização da área do Input*/
+  .inputComponenteEstilo {
+    padding: 1vw 1.5vw;
+  }
+  input {
+    font-size: 1.5vw;
+  }
+  .tituloInputComponente {
+    font-size: 3vw;
+  }
+  .inputLabel {
+    font-size: 2vw;
+  }
+  /*Estilização do Bussines Card*/
+  #bussinesCard {
+    min-width: 30vw;
+    width: fit-content;
+    aspect-ratio: 3/4;
+  }
+  #foto-perfil {
+    height: 15vw;
+    width: 15vw;
+  }
+  #nome {
+    font-size: 3vw;
+  }
+  #cargo {
+    font-size: 1.75vw;
+  }
+  .info {
+    font-size: 1.6vw;
+  }
+  .icone {
+    width: 2.75vw;
+  }
+}
+
+@media (max-width: 750px) {
+  /*Estilização da área do Input*/
+  .inputComponenteEstilo {
+    width: 40vw;
+  }
+  input {
+    font-size: 2vw;
+  }
+  .tituloInputComponente {
+    font-size: 3.5vw;
+  }
+  .inputLabel {
+    font-size: 2.5vw;
+  }
+
+  #bussinesCard {
+    min-width: 35vw;
+    width: fit-content;
+    aspect-ratio: 3/4;
+  }
+  #foto-perfil {
+    height: 17vw;
+    width: 17vw;
+  }
+  #nome {
+    font-size: 3.5vw;
+  }
+  #cargo {
+    font-size: 2vw;
+  }
+  .info {
+    font-size: 1.8vw;
+  }
+  .icone {
+    width: 3vw;
+  }
+}
+
+@media (max-width: 590px) {
+  /*Configurações das flex boxes*/
+  #pai-flex-box,
+  #inputComponenteCaixaFlex {
+    display: flex;
+    flex-direction: column;
+  }
+  /*Estilização da área do Input*/
+  input {
+    width: 100%;
+    border-style: none;
+    font-size: 1.25vw;
+  }
+  .inputComponenteEstilo {
+    width: 100%;
+    height: 100vh;
+    padding: 2vw 3vw;
+  }
+  .inputComponenteEstiloFechado {
+    width: 100%;
+    height: 7vh;
+  }
+  input {
+    font-size: 3vw;
+  }
+  .tituloInputComponente {
+    font-size: 7vw;
+  }
+  .inputLabel {
+    font-size: 4vw;
+  }
+  #imagemLabel {
+    padding: 1.25vw;
+    margin-top: 1vw;
+  }
+  /*Estilização do botão abrir e fechar*/
+  .btn-abrir {
+    transform: rotate(-90deg);
+  }
+  .btn-fechar {
+    transform: rotate(90deg);
+  }
+  /*Estilização do Bussines Card*/
+  #bussinesCard {
+    min-width: 50vw;
+    width: fit-content;
+    aspect-ratio: 3/4;
+  }
+  #bussinesCardInfo {
+    padding: 3vw;
+  }
+  #foto-perfil {
+    height: 25vw;
+    width: 25vw;
+  }
+  #nome {
+    font-size: 5vw;
+  }
+  #cargo {
+    font-size: 4vw;
+  }
+  .info {
+    font-size: 3vw;
+  }
+  .icone {
+    width: 4.5vw;
+  }
+}
+
+@media (max-width: 430px) {
+  /*Estilização da área do Input*/
+  .tituloInputComponente {
+    font-size: 8vw;
+  }
+  .inputLabel {
+    font-size: 6vw;
+  }
+  input {
+    font-size: 4.5vw;
+  }
+  #imagemLabel {
+    padding: 1vw;
+    margin-top: 1vw;
+  }
+  /*Estilização do Bussines Card*/
+  #bussinesCard {
+    min-width: 75vw;
+    width: fit-content;
+    aspect-ratio: 3/4;
+  }
+  #bussinesCardInfo {
+    padding: 3vw;
+  }
+  #foto-perfil {
+    height: 40vw;
+    width: 40vw;
+  }
+  #nome {
+    font-size: 7.5vw;
+  }
+  #cargo {
+    font-size: 5vw;
+  }
+  .info {
+    font-size: 4vw;
+  }
+  .icone {
+    width: 6vw;
+  }
 }

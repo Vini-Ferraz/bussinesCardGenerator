@@ -14,6 +14,7 @@ export function InputNome({ nome, setNome }) {
         id="inputNome"
         name="inputNome"
         value={nome}
+        maxLength={35}
         onChange={(e) => setNome(e.target.value)}
       />
     </div>
