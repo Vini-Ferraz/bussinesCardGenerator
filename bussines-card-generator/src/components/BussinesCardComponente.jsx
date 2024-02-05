@@ -4,6 +4,7 @@ import { Endereco } from "./bussines-card-componentes/EnderecoComponente";
 import { Nome } from "./bussines-card-componentes/NomeComponente";
 import { Telefone } from "./bussines-card-componentes/TelefoneComponente";
 import { Email } from "./bussines-card-componentes/EmailComponente";
+import html2canvas from "html2canvas";
 
 export function BussinesCard({
   nome,
@@ -13,6 +14,11 @@ export function BussinesCard({
   endereco,
   imagem,
 }) {
+  function downloadBussinesCard() {
+    html2canvas(document.getElementById("bussinesCard")).then((canvas) => {
+      document.body.appendChild(canvas);
+    });
+  }
   return (
     <div id="bussinesCardFlexBox">
       <div id="bussinesCard">
@@ -29,6 +35,9 @@ export function BussinesCard({
           </div>
         </div>
       </div>
+      <button onClick={() => downloadBussinesCard()}>
+        Download Bussines Card
+      </button>
     </div>
   );
 }
