@@ -5,6 +5,7 @@ import { Nome } from "./bussines-card-componentes/NomeComponente";
 import { Telefone } from "./bussines-card-componentes/TelefoneComponente";
 import { Email } from "./bussines-card-componentes/EmailComponente";
 import html2canvas from "html2canvas";
+import { useEffect } from "react";
 
 export function BussinesCard({
   nome,
@@ -16,9 +17,14 @@ export function BussinesCard({
 }) {
   function downloadBussinesCard() {
     html2canvas(document.getElementById("bussinesCard")).then((canvas) => {
-      document.body.appendChild(canvas);
+      const btnDownloadBussinesCard = document.getElementById("btnDownload");
+      btnDownloadBussinesCard.href = canvas.toDataURL();
     });
   }
+  useEffect(() => {
+    downloadBussinesCard();
+  }, [nome, cargo, telefone, email, endereco, imagem]);
+
   return (
     <div id="bussinesCardFlexBox">
       <div id="bussinesCard">
@@ -35,9 +41,9 @@ export function BussinesCard({
           </div>
         </div>
       </div>
-      <button onClick={() => downloadBussinesCard()}>
+      <a id="btnDownload" download={"Bussines Card"} href="">
         Download Bussines Card
-      </button>
+      </a>
     </div>
   );
 }
