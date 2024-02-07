@@ -1,3 +1,7 @@
 export function Cargo({ cargo }) {
-  return <h2 id="cargo">{cargo}</h2>;
+  return cargo ? (
+    <h2 id="cargo">{cargo}</h2>
+  ) : (
+    <h2 id="cargo">Analista de RH</h2>
+  );
 }

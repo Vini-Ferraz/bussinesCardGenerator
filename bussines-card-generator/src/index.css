@@ -132,9 +132,14 @@ input {
 #foto-perfil {
   height: 12vw;
   width: 12vw;
-  border-radius: 50%;
   box-sizing: content-box;
+  border-style: none;
+  border-radius: 50%;
   object-fit: cover;
+  background-image: url("foto-bussines-card-placeholder.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 #nome {
   font-size: 2.2vw;
