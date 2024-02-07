@@ -27,23 +27,25 @@ export function BussinesCard({
 
   return (
     <div id="bussinesCardFlexBox">
-      <div id="bussinesCard">
-        <div id="bussinesCardInfo">
-          <FotoDePerfil imagem={imagem} />
-          <div>
-            <Nome nome={nome} />
-            <Cargo cargo={cargo} />
-          </div>
-          <div>
-            <Telefone telefone={telefone} />
-            <Email email={email} />
-            <Endereco endereco={endereco} />
+      <div id="bussinesCardContainer">
+        <div id="bussinesCard">
+          <div id="bussinesCardInfo">
+            <FotoDePerfil imagem={imagem} />
+            <div>
+              <Nome nome={nome} />
+              <Cargo cargo={cargo} />
+            </div>
+            <div>
+              <Telefone telefone={telefone} />
+              <Email email={email} />
+              <Endereco endereco={endereco} />
+            </div>
           </div>
         </div>
+        <a id="btnDownload" download={"Bussines Card"} href="">
+          <img src="download-icone.svg" alt="icone botão download" />
+        </a>
       </div>
-      <a id="btnDownload" download={"Bussines Card"} href="">
-        Download Bussines Card
-      </a>
     </div>
   );
 }

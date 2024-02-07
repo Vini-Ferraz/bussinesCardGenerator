@@ -25,7 +25,8 @@ body {
 #bussinesCardInfo,
 .info-flex-box,
 #foto-perfil-caixa-flex,
-#pai-flex-box {
+#pai-flex-box,
+#bussinesCardContainer {
   display: flex;
 }
 .inputComponenteEstilo,
@@ -151,6 +152,13 @@ input {
 }
 .icone-bussines-card {
   padding-right: 5%;
+}
+#btnDownload {
+  background-color: var(--bg-color-components);
+  padding: 0.25vw 0.5vw;
+  height: fit-content;
+  margin-left: 1vw;
+  border-radius: var(--border);
 }
 /*Media Queries para a responsividade*/
 @media (max-width: 1000px) {
