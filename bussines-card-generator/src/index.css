@@ -166,86 +166,93 @@ input {
   border-radius: var(--border);
 }
 /*Media Queries para a responsividade*/
-@media (max-width: 1000px) {
-  /*Estilização da área do Input*/
-  .inputComponenteEstilo {
-    padding: 1vw 1.5vw;
-  }
-  input {
-    font-size: 1.5vw;
-  }
-  .tituloInputComponente {
-    font-size: 3vw;
-  }
-  .inputLabel {
-    font-size: 2vw;
-  }
-  /*Estilização do Bussines Card*/
-  #bussinesCard {
-    min-width: 30vw;
-    width: fit-content;
-    aspect-ratio: 3/4;
-  }
-  #foto-perfil {
-    height: 15vw;
-    width: 15vw;
-  }
-  #nome {
-    font-size: 3vw;
-  }
-  #cargo {
-    font-size: 1.75vw;
-  }
-  .info {
-    font-size: 1.6vw;
-  }
-  .icone {
-    width: 2.75vw;
-  }
-}
-
-@media (max-width: 750px) {
+@media (max-width: 1024px) {
   /*Estilização da área do Input*/
   .inputComponenteEstilo {
     width: 40vw;
   }
-  input {
-    font-size: 2vw;
-  }
   .tituloInputComponente {
     font-size: 3.5vw;
+  }
+  input {
+    font-size: 2vw;
   }
   .inputLabel {
     font-size: 2.5vw;
   }
-
+  /*Estilização do Bussines Card*/
   #bussinesCard {
     min-width: 35vw;
     width: fit-content;
     aspect-ratio: 3/4;
   }
   #foto-perfil {
-    height: 17vw;
-    width: 17vw;
+    height: 17.5vw;
+    width: 17.5vw;
   }
   #nome {
     font-size: 3.5vw;
   }
   #cargo {
-    font-size: 2vw;
+    font-size: 2.25vw;
   }
   .info {
-    font-size: 1.8vw;
+    font-size: 2vw;
   }
   .icone {
-    width: 3vw;
+    width: 2.75vw;
+  }
+  #btnDownload {
+    padding: 0.75vw 1vw;
+  }
+}
+
+@media (max-width: 768px) {
+  /*Estilização da área do Input*/
+  .inputComponenteEstilo {
+    width: 40vw;
+  }
+  .tituloInputComponente {
+    font-size: 3.7vw;
+  }
+  input {
+    font-size: 2.2vw;
+  }
+  .inputLabel {
+    font-size: 2.7vw;
+  }
+
+  #bussinesCard {
+    min-width: 40vw;
+    width: fit-content;
+    aspect-ratio: 3/4;
+  }
+  #foto-perfil {
+    height: 20vw;
+    width: 20vw;
+  }
+  #nome {
+    font-size: 3.7vw;
+  }
+  #cargo {
+    font-size: 2.2vw;
+  }
+  .info {
+    font-size: 2vw;
+  }
+  .icone {
+    width: 3.2vw;
+  }
+  #btnDownload {
+    padding: 0.5vw 0.75vw;
   }
 }
 
 @media (max-width: 590px) {
   /*Configurações das flex boxes*/
   #pai-flex-box,
-  #inputComponenteCaixaFlex {
+  #inputComponenteCaixaFlex,
+  #bussinesCardContainer {
     display: flex;
     flex-direction: column;
   }
@@ -264,14 +271,14 @@ input {
     width: 100%;
     height: 7vh;
   }
-  input {
-    font-size: 3vw;
-  }
   .tituloInputComponente {
-    font-size: 7vw;
+    font-size: 7.5vw;
+  }
+  input {
+    font-size: 3.5vw;
   }
   .inputLabel {
-    font-size: 4vw;
+    font-size: 4.5vw;
   }
   #imagemLabel {
     padding: 1.25vw;
@@ -286,7 +293,7 @@ input {
   }
   /*Estilização do Bussines Card*/
   #bussinesCard {
-    min-width: 50vw;
+    min-width: 55vw;
     width: fit-content;
     aspect-ratio: 3/4;
   }
@@ -308,6 +315,12 @@ input {
   }
   .icone {
     width: 4.5vw;
+  }
+  #btnDownload {
+    margin-top: 1vw;
+    text-align: center;
+    margin-left: 0;
+    padding: 0.5vw 0.75vw;
   }
 }
 
@@ -333,7 +346,7 @@ input {
     aspect-ratio: 3/4;
   }
   #bussinesCardInfo {
-    padding: 3vw;
+    padding: 3.5vw;
   }
   #foto-perfil {
     height: 40vw;
