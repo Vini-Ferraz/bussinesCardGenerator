@@ -5,6 +5,7 @@
   --bg-color-hover: #a4a1a5;
   --bg-color-components: #414066;
   --font-white-color: #ffffff;
+  --font-alert-color: #e9ff27;
   --font-black-color: #1e1e1e;
   --shadow: 0.3vw 0.3vw rgba(30, 30, 30, 0.25);
   --border: 0.5vw;
@@ -89,6 +90,13 @@ input {
 .inputLabel {
   font-size: 1.7vw;
   font-weight: 600;
+}
+.alerta {
+  color: var(--font-alert-color);
+  font-weight: 200;
+  font-style: italic;
+  font-size: 1vw;
+  padding-top: 2.5%;
 }
 /*Estilização do botão abrir e fechar*/
 .btn-abrir,
