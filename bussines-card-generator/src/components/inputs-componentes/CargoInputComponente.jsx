@@ -4,7 +4,7 @@ export function InputCargo({ cargo, setCargo }) {
   const [inputValue, setInputValue] = useState(cargo);
   let regex = /^[A-Z\sáéíóúâêîôûãõç]*$/i;
   let teste = regex.test(inputValue);
-  return teste ? (
+  return (
     <div>
       <label
         htmlFor="inputCargo"
@@ -24,25 +24,11 @@ export function InputCargo({ cargo, setCargo }) {
           setInputValue(e.target.value);
         }}
       />
-    </div>
-  ) : (
-    <div>
-      <label
-        htmlFor="inputCargo"
-        name="cargoLabel"
-        id="cargoLabel"
-        className="inputLabel"
-      >
-        Cargo:{" "}
-      </label>
-      <input
-        type="text"
-        id="inputCargo"
-        value={inputValue}
-        maxLength={1}
-        onChange={(e) => setInputValue(e.target.value)}
-      />
-      <p className="alerta">O cargo só deve conter caracteres válidos (a-z)</p>
+      {!teste && (
+        <p className="alerta">
+          O cargo só deve conter caracteres válidos (a-z)
+        </p>
+      )}
     </div>
   );
 }
