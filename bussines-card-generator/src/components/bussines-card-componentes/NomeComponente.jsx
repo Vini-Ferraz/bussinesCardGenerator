@@ -1,3 +1,7 @@
-export function Nome({ nome }) {
-  return nome ? <h1 id="nome">{nome}</h1> : <h1 id="nome">Ana B. Santos</h1>;
+export function Nome({ nome, NomeTesteRegex }) {
+  return nome && NomeTesteRegex ? (
+    <h1 id="nome">{nome}</h1>
+  ) : (
+    <h1 id="nome">Xxx X. Xxxxxx</h1>
+  );
 }

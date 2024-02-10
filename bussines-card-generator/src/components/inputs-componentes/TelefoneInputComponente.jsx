@@ -1,9 +1,4 @@
-import { useState } from "react";
-
-export function InputTelefone({ telefone, setTelefone }) {
-  const [inputValue, setInputValue] = useState(telefone);
-  let regex = /^[0-9\s()+-]*$/i;
-  let teste = regex.test(inputValue);
+export function InputTelefone({ telefone, setTelefone, TelefoneTesteRegex }) {
   return (
     <div>
       <label
@@ -21,10 +16,9 @@ export function InputTelefone({ telefone, setTelefone }) {
         maxLength={35}
         onChange={(e) => {
           setTelefone(e.target.value);
-          setInputValue(e.target.value);
         }}
       />
-      {!teste && (
+      {!TelefoneTesteRegex && (
         <p className="alerta">
           O telefone só deve conter caracteres válidos <br /> (0-9 | ()-)
         </p>

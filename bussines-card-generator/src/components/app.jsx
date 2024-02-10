@@ -8,6 +8,17 @@ export function App() {
   const [email, setEmail] = useState("");
   const [endereco, setEndereco] = useState("");
   const [imagem, setImagem] = useState(null);
+  const NomeRegex = /^[A-Z\sáéíóúâêîôûãõç]*$/i;
+  const CargoRegex = /^[A-Z\sáéíóúâêîôûãõç]*$/i;
+  const TelefoneRegex = /^[0-9\s()+-]*$/i;
+  const EmailRegex = /^[A-Z0-9._%+-@]*$/i;
+  const EnderecoRegex = /^[0-9A-Z\ssáéíóúâêîôûãõç()+-]*$/i;
+  const NomeTesteRegex = NomeRegex.test(nome);
+  const CargoTesteRegex = CargoRegex.test(cargo);
+  const TelefoneTesteRegex = TelefoneRegex.test(telefone);
+  const EmailTesteRegex = EmailRegex.test(email);
+  const EnderecoTesteRegex = EnderecoRegex.test(endereco);
+
   return (
     <div id="pai-flex-box">
       <InputComponente
@@ -22,6 +33,11 @@ export function App() {
         endereco={endereco}
         setEndereco={setEndereco}
         setImagem={setImagem}
+        NomeTesteRegex={NomeTesteRegex}
+        CargoTesteRegex={CargoTesteRegex}
+        TelefoneTesteRegex={TelefoneTesteRegex}
+        EmailTesteRegex={EmailTesteRegex}
+        EnderecoTesteRegex={EnderecoTesteRegex}
       />
       <BussinesCard
         nome={nome}
@@ -30,6 +46,11 @@ export function App() {
         email={email}
         endereco={endereco}
         imagem={imagem}
+        NomeTesteRegex={NomeTesteRegex}
+        CargoTesteRegex={CargoTesteRegex}
+        TelefoneTesteRegex={TelefoneTesteRegex}
+        EmailTesteRegex={EmailTesteRegex}
+        EnderecoTesteRegex={EnderecoTesteRegex}
       />
     </div>
   );

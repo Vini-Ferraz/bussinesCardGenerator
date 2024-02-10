@@ -14,6 +14,11 @@ export function BussinesCard({
   email,
   endereco,
   imagem,
+  NomeTesteRegex,
+  CargoTesteRegex,
+  TelefoneTesteRegex,
+  EmailTesteRegex,
+  EnderecoTesteRegex,
 }) {
   function downloadBussinesCard() {
     html2canvas(document.getElementById("bussinesCard")).then((canvas) => {
@@ -32,13 +37,19 @@ export function BussinesCard({
           <div id="bussinesCardInfo">
             <FotoDePerfil imagem={imagem} />
             <div>
-              <Nome nome={nome} />
-              <Cargo cargo={cargo} />
+              <Nome nome={nome} NomeTesteRegex={NomeTesteRegex} />
+              <Cargo cargo={cargo} CargoTesteRegex={CargoTesteRegex} />
             </div>
             <div>
-              <Telefone telefone={telefone} />
-              <Email email={email} />
-              <Endereco endereco={endereco} />
+              <Telefone
+                telefone={telefone}
+                TelefoneTesteRegex={TelefoneTesteRegex}
+              />
+              <Email email={email} EmailTesteRegex={EmailTesteRegex} />
+              <Endereco
+                endereco={endereco}
+                EnderecoTesteRegex={EnderecoTesteRegex}
+              />
             </div>
           </div>
         </div>

@@ -1,8 +1,4 @@
-import { useState } from "react";
-export function InputEndereco({ endereco, setEndereco }) {
-  const [inputValue, setInputValue] = useState(endereco);
-  let regex = /^[0-9A-Z\ssáéíóúâêîôûãõç()+-]*$/i;
-  let teste = regex.test(inputValue);
+export function InputEndereco({ endereco, setEndereco, EnderecoTesteRegex }) {
   return (
     <div>
       <label
@@ -20,10 +16,9 @@ export function InputEndereco({ endereco, setEndereco }) {
         maxLength={35}
         onChange={(e) => {
           setEndereco(e.target.value);
-          setInputValue(e.target.value);
         }}
       />
-      {!teste && (
+      {!EnderecoTesteRegex && (
         <p className="alerta">
           A localização só deve conter caracteres válidos <br /> (A-Z | 0-9 |
           ()+-)

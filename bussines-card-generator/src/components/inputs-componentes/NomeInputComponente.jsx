@@ -1,9 +1,4 @@
-import { useState } from "react";
-
-export function InputNome({ nome, setNome }) {
-  const [inputValue, setInputValue] = useState(nome);
-  let regex = /^[A-Z\sáéíóúâêîôûãõç]*$/i;
-  let teste = regex.test(inputValue);
+export function InputNome({ nome, setNome, NomeTesteRegex }) {
   return (
     <div>
       <label
@@ -22,10 +17,9 @@ export function InputNome({ nome, setNome }) {
         maxLength={35}
         onChange={(e) => {
           setNome(e.target.value);
-          setInputValue(e.target.value);
         }}
       />
-      {!teste && (
+      {!NomeTesteRegex && (
         <p className="alerta">O nome só deve conter caracteres válidos (a-z)</p>
       )}
     </div>

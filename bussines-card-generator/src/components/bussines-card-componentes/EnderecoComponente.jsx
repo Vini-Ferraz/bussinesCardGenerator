@@ -1,5 +1,5 @@
-export function Endereco({ endereco }) {
-  return endereco ? (
+export function Endereco({ endereco, EnderecoTesteRegex }) {
+  return endereco && EnderecoTesteRegex ? (
     <div className="info-flex-box info">
       <i className="icone-bussines-card">
         <img
@@ -19,7 +19,7 @@ export function Endereco({ endereco }) {
           className="icone"
         />
       </i>
-      <p>São Paulo - SP</p>
+      <p>Xxx Xxxxx - XX</p>
     </div>
   );
 }

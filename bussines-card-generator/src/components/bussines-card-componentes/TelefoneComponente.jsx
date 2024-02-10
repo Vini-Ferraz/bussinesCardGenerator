@@ -1,5 +1,5 @@
-export function Telefone({ telefone }) {
-  return telefone ? (
+export function Telefone({ telefone, TelefoneTesteRegex }) {
+  return telefone && TelefoneTesteRegex ? (
     <div className="info-flex-box info">
       <i className="icone-bussines-card">
         <img
@@ -19,7 +19,7 @@ export function Telefone({ telefone }) {
           className="icone"
         />
       </i>
-      <p> (11) 99312-0101 </p>
+      <p> (xx) xxxxx-xxxx </p>
     </div>
   );
 }

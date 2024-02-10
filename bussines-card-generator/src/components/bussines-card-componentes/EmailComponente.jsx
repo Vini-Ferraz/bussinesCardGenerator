@@ -1,5 +1,5 @@
-export function Email({ email }) {
-  return email ? (
+export function Email({ email, EmailTesteRegex }) {
+  return email && EmailTesteRegex ? (
     <div className="info-flex-box info" id="website-info">
       <i className="icone-bussines-card">
         <img
@@ -19,7 +19,7 @@ export function Email({ email }) {
           className="icone"
         />
       </i>
-      <p>santos25@gmail.com</p>
+      <p>xxxxxxxx@xxxxx.xxx</p>
     </div>
   );
 }
