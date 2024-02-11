@@ -188,6 +188,9 @@ input {
   .inputLabel {
     font-size: 2.5vw;
   }
+  .alerta {
+    font-size: 1.5vw;
+  }
   /*Estilização do Bussines Card*/
   #bussinesCard {
     min-width: 35vw;
@@ -219,6 +222,7 @@ input {
   /*Estilização da área do Input*/
   .inputComponenteEstilo {
     width: 40vw;
+    overflow: auto;
   }
   .tituloInputComponente {
     font-size: 3.7vw;
@@ -228,6 +232,9 @@ input {
   }
   .inputLabel {
     font-size: 2.7vw;
+  }
+  .alerta {
+    font-size: 2.5vw;
   }
 
   #bussinesCard {
@@ -291,6 +298,9 @@ input {
   #imagemLabel {
     padding: 1.25vw;
     margin-top: 1vw;
+  }
+  .alerta {
+    font-size: 3.5vw;
   }
   /*Estilização do botão abrir e fechar*/
   .btn-abrir {

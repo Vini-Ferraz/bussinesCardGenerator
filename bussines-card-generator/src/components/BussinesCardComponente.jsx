@@ -31,7 +31,7 @@ export function BussinesCard({
   }, [nome, cargo, telefone, email, endereco, imagem]);
 
   return (
-    <div id="bussinesCardFlexBox">
+    <main id="bussinesCardFlexBox">
       <div id="bussinesCardContainer">
         <div id="bussinesCard">
           <div id="bussinesCardInfo">
@@ -57,6 +57,6 @@ export function BussinesCard({
           <img src="download-icone.svg" alt="icone botão download" />
         </a>
       </div>
-    </div>
+    </main>
   );
 }

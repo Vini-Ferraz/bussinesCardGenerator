@@ -26,7 +26,7 @@ export function InputComponente({
 }) {
   const [estadoBtn, setEstadoBtn] = useState(false);
   return (
-    <div id="inputComponenteCaixaFlex">
+    <aside id="inputComponenteCaixaFlex">
       {estadoBtn == false ? (
         <div id="inputComponente" className="inputComponenteEstilo">
           <h1 className="tituloInputComponente">Informações</h1>
@@ -62,6 +62,6 @@ export function InputComponente({
       )}
 
       <BtnAbrirFechar estadoBtn={estadoBtn} setEstadoBtn={setEstadoBtn} />
-    </div>
+    </aside>
   );
 }
