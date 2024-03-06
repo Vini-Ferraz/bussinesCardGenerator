@@ -8,6 +8,8 @@ export function App() {
   const [email, setEmail] = useState("");
   const [endereco, setEndereco] = useState("");
   const [imagem, setImagem] = useState(null);
+  const [backgroundColorValue, setBackgroundColorValue] = useState("#414066");
+  const [letterColorValue, setLetterColorValue] = useState("#ffffff");
   const NomeRegex = /^[A-Z\sáéíóúâêîôûãõç]*$/i;
   const CargoRegex = /^[A-Z\sáéíóúâêîôûãõç]*$/i;
   const TelefoneRegex = /^[0-9\s()+-]*$/i;
@@ -51,6 +53,10 @@ export function App() {
         TelefoneTesteRegex={TelefoneTesteRegex}
         EmailTesteRegex={EmailTesteRegex}
         EnderecoTesteRegex={EnderecoTesteRegex}
+        backgroundColorValue={backgroundColorValue}
+        setBackgroundColorValue={setBackgroundColorValue}
+        letterColorValue={letterColorValue}
+        setLetterColorValue={setLetterColorValue}
       />
     </div>
   );

@@ -4,9 +4,9 @@ import { Endereco } from "./bussines-card-componentes/EnderecoComponente";
 import { Nome } from "./bussines-card-componentes/NomeComponente";
 import { Telefone } from "./bussines-card-componentes/TelefoneComponente";
 import { Email } from "./bussines-card-componentes/EmailComponente";
+import { ColorBackground } from "./bussines-card-componentes/ColorBackgroundPicker";
 import html2canvas from "html2canvas";
 import { useEffect } from "react";
-
 export function BussinesCard({
   nome,
   cargo,
@@ -19,7 +19,17 @@ export function BussinesCard({
   TelefoneTesteRegex,
   EmailTesteRegex,
   EnderecoTesteRegex,
+  backgroundColorValue,
+  setBackgroundColorValue,
+  letterColorValue,
+  setLetterColorValue,
 }) {
+  const bussinesCardStyle = {
+    backgroundColor: backgroundColorValue,
+  };
+  const bussinesLetterStyle = {
+    color: letterColorValue,
+  };
   function downloadBussinesCard() {
     html2canvas(document.getElementById("bussinesCard")).then((canvas) => {
       const btnDownloadBussinesCard = document.getElementById("btnDownload");
@@ -33,8 +43,8 @@ export function BussinesCard({
   return (
     <main id="bussinesCardFlexBox">
       <div id="bussinesCardContainer">
-        <div id="bussinesCard">
-          <div id="bussinesCardInfo">
+        <div id="bussinesCard" style={bussinesCardStyle}>
+          <div id="bussinesCardInfo" style={bussinesLetterStyle}>
             <FotoDePerfil imagem={imagem} />
             <div>
               <Nome nome={nome} NomeTesteRegex={NomeTesteRegex} />
@@ -56,6 +66,12 @@ export function BussinesCard({
         <a id="btnDownload" download={"Bussines Card"} href="">
           <img src="download-icone.svg" alt="icone botão download" />
         </a>
+        <ColorBackground
+          setBackgroundColorValue={setBackgroundColorValue}
+          backgroundColorValue={backgroundColorValue}
+          letterColorValue={letterColorValue}
+          setLetterColorValue={setLetterColorValue}
+        />
       </div>
     </main>
   );
