@@ -10,6 +10,7 @@ export function App() {
   const [imagem, setImagem] = useState(null);
   const [backgroundColorValue, setBackgroundColorValue] = useState("#414066");
   const [letterColorValue, setLetterColorValue] = useState("#ffffff");
+  const [iconColorValue, setIconColorValue] = useState("#ffffff");
   const NomeRegex = /^[A-Z\sáéíóúâêîôûãõç]*$/i;
   const CargoRegex = /^[A-Z\sáéíóúâêîôûãõç]*$/i;
   const TelefoneRegex = /^[0-9\s()+-]*$/i;
@@ -57,6 +58,8 @@ export function App() {
         setBackgroundColorValue={setBackgroundColorValue}
         letterColorValue={letterColorValue}
         setLetterColorValue={setLetterColorValue}
+        iconColorValue={iconColorValue}
+        setIconColorValue={setIconColorValue}
       />
     </div>
   );

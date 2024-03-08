@@ -19,7 +19,9 @@ export function ColorBackground({
           setBackgroundColorValue(e.target.value);
         }}
       />
-      {backgroundColorValue}
+      <label htmlFor="letterColor" id="letterColorLabel">
+        Escolha a cor da fonte
+      </label>
       <input
         type="color"
         name="letterColor"
@@ -28,16 +30,6 @@ export function ColorBackground({
           setLetterColorValue(e.target.value);
         }}
       />
-      {letterColorValue}
-      <input
-        type="color"
-        name="iconColor"
-        id="iconColor"
-        onChange={(e) => {
-          setIconColorValue(e.target.value);
-        }}
-      />
-      {iconColorValue}
     </div>
   );
 }

@@ -23,12 +23,17 @@ export function BussinesCard({
   setBackgroundColorValue,
   letterColorValue,
   setLetterColorValue,
+  iconColorValue,
+  setIconColorValue,
 }) {
   const bussinesCardStyle = {
     backgroundColor: backgroundColorValue,
   };
   const bussinesLetterStyle = {
     color: letterColorValue,
+  };
+  const iconeColor = {
+    fill: iconColorValue,
   };
   function downloadBussinesCard() {
     html2canvas(document.getElementById("bussinesCard")).then((canvas) => {
@@ -54,11 +59,17 @@ export function BussinesCard({
               <Telefone
                 telefone={telefone}
                 TelefoneTesteRegex={TelefoneTesteRegex}
+                style={iconeColor}
               />
-              <Email email={email} EmailTesteRegex={EmailTesteRegex} />
+              <Email
+                email={email}
+                EmailTesteRegex={EmailTesteRegex}
+                iconColorValue={iconColorValue}
+              />
               <Endereco
                 endereco={endereco}
                 EnderecoTesteRegex={EnderecoTesteRegex}
+                iconColorValue={iconColorValue}
               />
             </div>
           </div>
@@ -71,6 +82,8 @@ export function BussinesCard({
           backgroundColorValue={backgroundColorValue}
           letterColorValue={letterColorValue}
           setLetterColorValue={setLetterColorValue}
+          iconColorValue={iconColorValue}
+          setIconColorValue={setIconColorValue}
         />
       </div>
     </main>
