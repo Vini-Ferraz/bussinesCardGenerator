@@ -3,9 +3,11 @@ export function ColorBackground({
   backgroundColorValue,
   setLetterColorValue,
   letterColorValue,
-  iconColorValue,
-  setIconColorValue,
+  setAplicarCor,
 }) {
+  function handleColorChange() {
+    setAplicarCor(true);
+  }
   return (
     <div>
       <label htmlFor="backgroundColor" id="backgroundColorLabel">
@@ -30,6 +32,7 @@ export function ColorBackground({
           setLetterColorValue(e.target.value);
         }}
       />
+      <button onClick={() => handleColorChange()}>Aplicar cores</button>
     </div>
   );
 }

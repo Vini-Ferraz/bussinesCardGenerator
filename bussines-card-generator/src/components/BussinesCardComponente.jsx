@@ -23,17 +23,14 @@ export function BussinesCard({
   setBackgroundColorValue,
   letterColorValue,
   setLetterColorValue,
-  iconColorValue,
-  setIconColorValue,
+  aplicarCor,
+  setAplicarCor,
 }) {
   const bussinesCardStyle = {
     backgroundColor: backgroundColorValue,
   };
   const bussinesLetterStyle = {
     color: letterColorValue,
-  };
-  const iconeColor = {
-    fill: iconColorValue,
   };
   function downloadBussinesCard() {
     html2canvas(document.getElementById("bussinesCard")).then((canvas) => {
@@ -44,6 +41,10 @@ export function BussinesCard({
   useEffect(() => {
     downloadBussinesCard();
   }, [nome, cargo, telefone, email, endereco, imagem]);
+  if (aplicarCor) {
+    downloadBussinesCard();
+    setAplicarCor(false);
+  }
 
   return (
     <main id="bussinesCardFlexBox">
@@ -59,17 +60,11 @@ export function BussinesCard({
               <Telefone
                 telefone={telefone}
                 TelefoneTesteRegex={TelefoneTesteRegex}
-                style={iconeColor}
               />
-              <Email
-                email={email}
-                EmailTesteRegex={EmailTesteRegex}
-                iconColorValue={iconColorValue}
-              />
+              <Email email={email} EmailTesteRegex={EmailTesteRegex} />
               <Endereco
                 endereco={endereco}
                 EnderecoTesteRegex={EnderecoTesteRegex}
-                iconColorValue={iconColorValue}
               />
             </div>
           </div>
@@ -82,8 +77,7 @@ export function BussinesCard({
           backgroundColorValue={backgroundColorValue}
           letterColorValue={letterColorValue}
           setLetterColorValue={setLetterColorValue}
-          iconColorValue={iconColorValue}
-          setIconColorValue={setIconColorValue}
+          setAplicarCor={setAplicarCor}
         />
       </div>
     </main>

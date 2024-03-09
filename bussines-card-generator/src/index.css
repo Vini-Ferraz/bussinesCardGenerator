@@ -125,6 +125,7 @@ input {
   width: fit-content;
   aspect-ratio: 3/4;
   color: var(--font-white-color);
+  border-radius: 20px;
 }
 #bussinesCardInfo {
   height: 100%;
