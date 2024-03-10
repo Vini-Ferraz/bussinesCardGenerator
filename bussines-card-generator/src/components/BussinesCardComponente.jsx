@@ -29,10 +29,6 @@ export function BussinesCard({
   useEffect(() => {
     downloadBussinesCard();
   }, [nome, cargo, telefone, email, endereco, imagem]);
-  if (aplicarCor) {
-    downloadBussinesCard();
-    setAplicarCor(false);
-  }
 
   return (
     <main id="bussinesCardFlexBox">
