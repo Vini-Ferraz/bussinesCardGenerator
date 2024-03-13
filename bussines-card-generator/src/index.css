@@ -125,7 +125,7 @@ input {
   width: fit-content;
   aspect-ratio: 3/4;
   color: var(--font-white-color);
-  border-radius: 20px;
+  border-radius: 2vw;
 }
 #bussinesCardInfo {
   height: 100%;
@@ -163,9 +163,6 @@ input {
   font-weight: 200;
   width: 100%;
   word-wrap: break-word;
-}
-.icone-bussines-card {
-  padding-right: 5%;
 }
 #btnDownload {
   background-color: var(--bg-color-components);
@@ -211,9 +208,6 @@ input {
   .info {
     font-size: 2vw;
   }
-  .icone {
-    width: 2.75vw;
-  }
   #btnDownload {
     padding: 0.75vw 1vw;
   }
@@ -256,9 +250,6 @@ input {
   .info {
     font-size: 2vw;
   }
-  .icone {
-    width: 3.2vw;
-  }
   #btnDownload {
     padding: 0.5vw 0.75vw;
   }
@@ -273,6 +264,12 @@ input {
     flex-direction: column;
   }
   /*Estilização da área do Input*/
+  input,
+  #imagemLabel,
+  #btnDownload,
+  #bussinesCard {
+    border-radius: 1.5vw;
+  }
   input {
     width: 100%;
     border-style: none;
@@ -280,8 +277,8 @@ input {
   }
   .inputComponenteEstilo {
     width: 100%;
-    height: 100vh;
-    padding: 2vw 3vw;
+    height: 95vh;
+    padding: 8vw 7vw;
   }
   .inputComponenteEstiloFechado {
     width: 100%;
@@ -292,6 +289,7 @@ input {
   }
   input {
     font-size: 3.5vw;
+    font-size: 4vw;
   }
   .inputLabel {
     font-size: 4.5vw;
@@ -312,7 +310,7 @@ input {
   }
   /*Estilização do Bussines Card*/
   #bussinesCard {
-    min-width: 55vw;
+    min-width: 65vw;
     width: fit-content;
     aspect-ratio: 3/4;
   }
@@ -320,21 +318,19 @@ input {
     padding: 3vw;
   }
   #foto-perfil {
-    height: 25vw;
-    width: 25vw;
+    height: 30vw;
+    width: 30vw;
   }
   #nome {
-    font-size: 5vw;
+    font-size: 6vw;
   }
   #cargo {
-    font-size: 4vw;
+    font-size: 5vw;
   }
   .info {
-    font-size: 3vw;
+    font-size: 4vw;
   }
-  .icone {
-    width: 4.5vw;
-  }
+
   #btnDownload {
     margin-top: 1vw;
     text-align: center;
@@ -345,6 +341,10 @@ input {
 
 @media (max-width: 430px) {
   /*Estilização da área do Input*/
+  .inputComponenteEstilo {
+    height: 85svh;
+    padding: 12.5vw 6vw;
+  }
   .tituloInputComponente {
     font-size: 8vw;
   }
@@ -352,15 +352,24 @@ input {
     font-size: 6vw;
   }
   input {
-    font-size: 4.5vw;
+    font-size: 5vw;
+    border-radius: 2vw;
+    padding: 2vw;
   }
+  input,
+  #imagemLabel,
+  #btnDownload,
+  #bussinesCard {
+    border-radius: 2vw;
+  }
+
   #imagemLabel {
-    padding: 1vw;
+    padding: 2vw;
     margin-top: 1vw;
   }
   /*Estilização do Bussines Card*/
   #bussinesCard {
-    min-width: 75vw;
+    min-width: 85vw;
     width: fit-content;
     aspect-ratio: 3/4;
   }
@@ -368,19 +377,16 @@ input {
     padding: 3.5vw;
   }
   #foto-perfil {
-    height: 40vw;
-    width: 40vw;
+    height: 45vw;
+    width: 45vw;
   }
   #nome {
-    font-size: 7.5vw;
+    font-size: 8.5vw;
   }
   #cargo {
-    font-size: 5vw;
+    font-size: 6vw;
   }
   .info {
-    font-size: 4vw;
-  }
-  .icone {
-    width: 6vw;
+    font-size: 5.5vw;
   }
 }
