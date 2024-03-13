@@ -342,7 +342,7 @@ input {
 @media (max-width: 430px) {
   /*Estilização da área do Input*/
   .inputComponenteEstilo {
-    height: 85svh;
+    height: 95svh;
     padding: 12.5vw 6vw;
   }
   .tituloInputComponente {
