@@ -28,6 +28,7 @@ export function BussinesCard({
   }
   useEffect(() => {
     downloadBussinesCard();
+    downloadBussinesCard();
   }, [nome, cargo, telefone, email, endereco, imagem]);
 
   return (
@@ -53,12 +54,7 @@ export function BussinesCard({
             </div>
           </div>
         </div>
-        <a
-          id="btnDownload"
-          download={"Bussines Card"}
-          href=""
-          onClick={downloadBussinesCard()}
-        >
+        <a id="btnDownload" download={"Bussines Card"} href="">
           <img src="download-icone.svg" alt="icone botão download" />
         </a>
       </div>
