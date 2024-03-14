@@ -277,7 +277,7 @@ input {
   }
   .inputComponenteEstilo {
     width: 100%;
-    height: 95vh;
+    height: 100svh;
     padding: 8vw 7vw;
   }
   .inputComponenteEstiloFechado {
@@ -342,7 +342,7 @@ input {
 @media (max-width: 430px) {
   /*Estilização da área do Input*/
   .inputComponenteEstilo {
-    height: 95svh;
+    height: 100svh;
     padding: 12.5vw 6vw;
   }
   .tituloInputComponente {
