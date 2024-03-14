@@ -25,6 +25,10 @@ export function BussinesCard({
       const btnDownloadBussinesCard = document.getElementById("btnDownload");
       btnDownloadBussinesCard.href = canvas.toDataURL();
     });
+    html2canvas(document.getElementById("bussinesCard")).then((canvas) => {
+      const btnDownloadBussinesCard = document.getElementById("btnDownload");
+      btnDownloadBussinesCard.href = canvas.toDataURL();
+    });
   }
   useEffect(() => {
     downloadBussinesCard();
