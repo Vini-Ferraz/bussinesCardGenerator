@@ -53,7 +53,12 @@ export function BussinesCard({
             </div>
           </div>
         </div>
-        <a id="btnDownload" download={"Bussines Card"} href="">
+        <a
+          id="btnDownload"
+          download={"Bussines Card"}
+          href=""
+          onClick={() => downloadBussinesCard()}
+        >
           <img src="download-icone.svg" alt="icone botão download" />
         </a>
       </div>
