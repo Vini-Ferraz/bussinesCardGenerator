@@ -28,7 +28,6 @@ export function BussinesCard({
   }
   useEffect(() => {
     downloadBussinesCard();
-    downloadBussinesCard();
   }, [nome, cargo, telefone, email, endereco, imagem]);
 
   return (
