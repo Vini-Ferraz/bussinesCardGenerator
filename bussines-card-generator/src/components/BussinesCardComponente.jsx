@@ -27,7 +27,7 @@ export function BussinesCard({
       console.log("Chamei a função");
     });
   }
-  setInterval(downloadBussinesCard(), 500);
+  setInterval(downloadBussinesCard, 1000);
   return (
     <main id="bussinesCardFlexBox">
       <div id="bussinesCardContainer">
