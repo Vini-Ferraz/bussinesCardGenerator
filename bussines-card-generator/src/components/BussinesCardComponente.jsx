@@ -24,9 +24,10 @@ export function BussinesCard({
     html2canvas(document.getElementById("bussinesCard")).then((canvas) => {
       const btnDownloadBussinesCard = document.getElementById("btnDownload");
       btnDownloadBussinesCard.href = canvas.toDataURL();
+      console.log("Chamei a função");
     });
   }
-  setInterval(downloadBussinesCard(), 1000);
+  setInterval(downloadBussinesCard(), 500);
   return (
     <main id="bussinesCardFlexBox">
       <div id="bussinesCardContainer">
