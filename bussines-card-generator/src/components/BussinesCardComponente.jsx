@@ -6,6 +6,7 @@ import { Telefone } from "./bussines-card-componentes/TelefoneComponente";
 import { Email } from "./bussines-card-componentes/EmailComponente";
 import html2canvas from "html2canvas";
 import { useEffect } from "react";
+import { IconeDownload } from "../assets/icons/download-icone";
 
 export function BussinesCard({
   nome,
@@ -22,13 +23,21 @@ export function BussinesCard({
 }) {
   function downloadBussinesCard() {
     html2canvas(document.getElementById("bussinesCard")).then((canvas) => {
-      const btnDownloadBussinesCard = document.getElementById("btnDownload");
-      btnDownloadBussinesCard.href = canvas.toDataURL();
+      const yes = document.getElementById("yes");
+      yes.href = canvas.toDataURL();
     });
   }
-  useEffect(() => {
+  function openPopUp() {
+    const popUp = document.getElementById("popUp");
+    popUp.style.display = "flex";
     downloadBussinesCard();
-  }, [nome, cargo, telefone, email, endereco, imagem]);
+  }
+  function closePopUp() {
+    const popUp = document.getElementById("popUp");
+    popUp.style.display = "none";
+    downloadBussinesCard();
+  }
+  //<a id="btnDownload" download={"Bussines Card"} href="">
 
   return (
     <main id="bussinesCardFlexBox">
@@ -53,9 +62,20 @@ export function BussinesCard({
             </div>
           </div>
         </div>
-        <a id="btnDownload" download={"Bussines Card"} href="">
-          <img src="download-icone.svg" alt="icone botão download" />
+        <a id="btnDownload" onClick={() => openPopUp()}>
+          <IconeDownload />
         </a>
+      </div>
+      <div id="popUp">
+        <h1 id="popUpTittle">As informações estão corretas?</h1>
+        <span id="popUpBtnContainer">
+          <a id="yes" className="popUpBtn" download={"Bussines Card"} href="">
+            Sim
+          </a>
+          <a onClick={() => closePopUp()} className="popUpBtn">
+            Não
+          </a>
+        </span>
       </div>
     </main>
   );

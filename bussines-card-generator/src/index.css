@@ -4,6 +4,7 @@
   --bg-color: #c9c5cb;
   --bg-color-hover: #a4a1a5;
   --bg-color-components: #414066;
+  --bg-color-pop-up: #4c4a91;
   --font-white-color: #ffffff;
   --font-alert-color: #e9ff27;
   --font-black-color: #1e1e1e;
@@ -27,7 +28,8 @@ body {
 .info-flex-box,
 #foto-perfil-caixa-flex,
 #pai-flex-box,
-#bussinesCardContainer {
+#bussinesCardContainer,
+#popUpBtnContainer {
   display: flex;
 }
 .inputComponenteEstilo,
@@ -35,7 +37,8 @@ body {
   flex-direction: column;
 }
 .inputComponenteEstilo,
-#bussinesCardInfo {
+#bussinesCardInfo,
+#popUpBtnContainer {
   justify-content: space-around;
 }
 #inputComponenteCaixaFlex,
@@ -61,7 +64,8 @@ label {
   display: block;
 }
 input,
-#imagemLabel {
+#imagemLabel,
+.popUpBtn {
   background-color: var(--bg-color);
   padding: 0.5vw;
   border-radius: var(--border);
@@ -72,11 +76,13 @@ input {
   border-style: none;
   font-size: 1.25vw;
 }
-#imagemLabel {
+#imagemLabel,
+.popUpBtn {
   color: var(--font-black-color);
   width: fit-content;
 }
-#imagemLabel:hover {
+#imagemLabel:hover,
+.popUpBtn:hover {
   cursor: pointer;
   background-color: var(--bg-color-hover);
 }
@@ -87,7 +93,8 @@ input {
   font-size: 2.5vw;
   font-weight: 600;
 }
-.inputLabel {
+.inputLabel,
+.popUpBtn {
   font-size: 1.7vw;
   font-weight: 600;
 }
@@ -170,6 +177,28 @@ input {
   height: fit-content;
   margin-left: 1vw;
   border-radius: var(--border);
+}
+
+#popUp {
+  z-index: 100;
+  position: absolute;
+  display: none;
+  text-align: center;
+  background-color: var(--bg-color-pop-up);
+  padding: 1.5vw;
+  color: var(--font-white-color);
+  border-radius: 2vw;
+  height: 35vh;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+#popUpBtnContainer {
+  width: 75%;
+}
+.popUpBtn {
+  text-decoration: none;
+  cursor: pointer;
 }
 /*Media Queries para a responsividade*/
 @media (max-width: 1024px) {

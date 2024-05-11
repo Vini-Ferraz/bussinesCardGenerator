@@ -1,3 +1,5 @@
+import { IconeFlecha } from "../../assets/icons/flecha-icone";
+
 export function BtnAbrirFechar({ estadoBtn, setEstadoBtn }) {
   function interruptor() {
     if (estadoBtn == false) {
@@ -14,7 +16,7 @@ export function BtnAbrirFechar({ estadoBtn, setEstadoBtn }) {
           id="btn-abrir-fechar"
           className="btn-abrir"
         >
-          <img src="flecha-icone.svg" alt="icone de flecha" />
+          <IconeFlecha />
         </button>
       ) : (
         <button
@@ -22,7 +24,7 @@ export function BtnAbrirFechar({ estadoBtn, setEstadoBtn }) {
           id="btn-abrir-fechar"
           className="btn-fechar"
         >
-          <img src="flecha-icone.svg" alt="icone de flecha" />
+          <IconeFlecha />
         </button>
       )}
     </div>
