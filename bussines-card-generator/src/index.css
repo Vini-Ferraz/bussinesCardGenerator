@@ -213,10 +213,20 @@ input {
     font-size: 2vw;
   }
   .inputLabel {
-    font-size: 2.5vw;
+    font-size: 3vw;
   }
+
   .alerta {
     font-size: 1.5vw;
+  }
+  #popUp {
+    padding: 3vw;
+  }
+  #popUpTittle {
+    font-size: 3vw;
+  }
+  .popUpBtn {
+    font-size: 2.5vw;
   }
   /*Estilização do Bussines Card*/
   #bussinesCard {
@@ -261,6 +271,15 @@ input {
     font-size: 2.5vw;
   }
 
+  #popUp {
+    width: 65%;
+  }
+  #popUpTittle {
+    font-size: 4vw;
+  }
+  .popUpBtn {
+    font-size: 3vw;
+  }
   #bussinesCard {
     min-width: 40vw;
     width: fit-content;
@@ -330,6 +349,17 @@ input {
   .alerta {
     font-size: 3.5vw;
   }
+
+  #popUp {
+    width: 80%;
+  }
+  #popUpTittle {
+    font-size: 5vw;
+  }
+  .popUpBtn {
+    font-size: 4vw;
+    padding: 1vw;
+  }
   /*Estilização do botão abrir e fechar*/
   .btn-abrir {
     transform: rotate(-90deg);
@@ -395,6 +425,16 @@ input {
   #imagemLabel {
     padding: 2vw;
     margin-top: 1vw;
+  }
+
+  #popUp {
+    width: 95%;
+  }
+  #popUpTittle {
+    font-size: 7vw;
+  }
+  .popUpBtn {
+    font-size: 6vw;
   }
   /*Estilização do Bussines Card*/
   #bussinesCard {
