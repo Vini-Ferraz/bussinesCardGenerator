@@ -29,12 +29,16 @@ export function BussinesCard({
   }
   function openPopUp() {
     const popUp = document.getElementById("popUp");
+    const popUpBackground = document.getElementById("popUpBackground");
     popUp.style.display = "flex";
+    popUpBackground.style.display = "flex";
     downloadBussinesCard();
   }
   function closePopUp() {
     const popUp = document.getElementById("popUp");
+    const popUpBackground = document.getElementById("popUpBackground");
     popUp.style.display = "none";
+    popUpBackground.style.display = "none";
     downloadBussinesCard();
   }
   //<a id="btnDownload" download={"Bussines Card"} href="">
@@ -66,16 +70,18 @@ export function BussinesCard({
           <IconeDownload />
         </a>
       </div>
-      <div id="popUp">
-        <h1 id="popUpTittle">As informações estão corretas?</h1>
-        <span id="popUpBtnContainer">
-          <a id="yes" className="popUpBtn" download={"Bussines Card"} href="">
-            Sim
-          </a>
-          <a onClick={() => closePopUp()} className="popUpBtn">
-            Não
-          </a>
-        </span>
+      <div id="popUpBackground">
+        <div id="popUp">
+          <h1 id="popUpTittle">As informações estão corretas?</h1>
+          <span id="popUpBtnContainer">
+            <a id="yes" className="popUpBtn" download={"Bussines Card"} href="">
+              Sim
+            </a>
+            <a onClick={() => closePopUp()} className="popUpBtn">
+              Não
+            </a>
+          </span>
+        </div>
       </div>
     </main>
   );

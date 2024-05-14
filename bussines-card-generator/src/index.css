@@ -53,6 +53,7 @@ body {
   padding: 2vw 3vw;
   color: var(--font-white-color);
   box-shadow: var(--shadow);
+  z-index: 97;
 }
 .inputComponenteEstiloFechado {
   background-color: var(--bg-color-components);
@@ -178,7 +179,17 @@ input {
   margin-left: 1vw;
   border-radius: var(--border);
 }
-
+#popUpBackground {
+  background-color: hsla(0, 0%, 0%, 0.555);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 96;
+  height: 100vh;
+  width: 100vw;
+}
 #popUp {
   z-index: 100;
   position: absolute;
