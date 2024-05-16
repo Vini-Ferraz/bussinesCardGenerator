@@ -41,7 +41,6 @@ export function BussinesCard({
     popUpBackground.style.display = "none";
     downloadBussinesCard();
   }
-  //<a id="btnDownload" download={"Bussines Card"} href="">
 
   return (
     <main id="bussinesCardFlexBox">
